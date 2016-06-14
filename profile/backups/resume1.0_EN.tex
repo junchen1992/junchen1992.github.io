@@ -1,0 +1,201 @@
+% LaTeX resume using res.cls
+% !Mode:: "TeX:UTF-8"
+
+
+%
+% last modified: 11/16/2015.
+%
+
+
+\documentclass{res}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{CJKutf8}
+\date{\today}
+
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\setlength{\textwidth}{5.1in} % set width of text portion
+\topmargin=-0.375in  % start text higher on the page
+\textheight 10in
+
+\newsectionwidth{0pt}
+
+\definecolor{mygrey}{gray}{.85}
+\newcommand{\resheading}[1]{{\normalsize \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[1]{  {\extracolsep{\fill}} \textbf{#1}\\\vspace{-6pt}}
+\newcommand{\resitem}[1]{\item \small{#1}}
+
+
+%\usepackage[colorlinks,urlcolor=blue]{hyperref}
+%\usepackage[normalem]{ulem}
+%\newcommand\link[1]{\href{mailto:#1}{\uline{\nolinkurl{#1}}}}
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+\begin{CJK*}{UTF8}{song}
+ \moveleft.5\hoffset\centerline{ {\Large \bf Jun Chen} }
+\end{CJK*}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+%\begin{CJK*}{UTF8}{song}
+% \moveleft.5\hoffset\centerline{
+%37 Chandler St.,
+%BELCONNEN,
+%ACT 2617 \hspace{20pt} tlnd.sky@gmail.com \hspace{20pt} +61-416354917}
+%\end{CJK*}
+
+
+\begin{resume}
+\begin{CJK*}{UTF8}{song}
+\normalsize
+
+% personal information:
+\resheading{Personal Information}
+
+\begin{itemize}
+\itemsep -2pt% reduce space between items
+  \item{\bf Phone}: +61 (4) 1635-4917
+  %\item{\bf E-mail}: tlnd.sky@gmail.com
+  \item{\bf E-mail}: Jason.JunCHEN1992@gmail.com
+%  \item{\bf Address}: Unit 25, 37 Chandler St., BELCONNEN, Canberra, ACT 2617, Australia
+  \item{\bf Address}: 117 Bandjalong Cres, ARANDA, Canberra, ACT 2614, Australia
+  \item{\bf GitHub}: https://github.com/0416354917/0416354917.github.io
+\end{itemize}
+reef
+
+
+%\resheading{Personal Interests}
+%
+%\begin{itemize}
+%\itemsep -2pt% reduce space between items
+%  \item Large-scale Data Analysis
+%  \item Algorithms Design and Optimization
+%  \item Web Design and Development
+%\end{itemize}
+
+
+% project experience:
+\resheading{Projects Experience (selected)}
+%\begin{itemize}
+%	\item{\bf Foodie.}
+%	\item{\bf Intelligent Parking Management System.}
+%	\item{\bf Vimi.}
+%	\item{\bf Face Recognition Based on QR Code.}
+%	\item{\bf Home Page of SSDUT.}
+%	\item{\bf Online Shopping Website Design.}
+%\end{itemize}
+
+
+\begin{itemize}
+	% Project FeedMe
+	\item {\bf FeedMe}, Postgraduate Graduating Project, Frontend Developer $\&$ iOS Developer \hfill 2015.8 - now	\vspace{3pt} \\
+- \textbf{Overview}: This project is aimed at providing an innovative Online Food Ordering and Delivery System. Based on the market research of similar services existing in Canberra and even in the whole Australia, we will avoid drawbacks of current similar services and bring out several new features, such as the group delivery functionality. When we get enough transactional data, we will set up to build a Business Intelligence System to provide valuable data information for customers. My work is mainly about Frontend Development and mobile App (iOS) Development. \vspace{2pt} \\
+- \textbf{Website Repository}: https://github.com/jevy-wangfei/feedmeClient \vspace{2pt} \\
+- \textbf{App Repository}: https://github.com/0416354917/FeedMeIOS 
+\end{itemize}
+
+
+
+% contest experience:
+\resheading{Contests Experience}
+
+\begin{itemize}
+
+\itemsep -2pt % reduce space between items
+  \item{\bf IEEExtreme 9.0} \hfill 2015.10 \vspace{3pt} \\
+		\textbf{Sponsor}: IEEE. \vspace{3pt} \\
+		\textbf{Program and Introduction}: IEEEXtreme 9.0 is a 24-Hour Global Programming Competition among expertises held by IEEE once a year. \vspace{3pt} \\
+		\textbf{Main Contributions:} \vspace{3pt} \\
+		- Undertook the leadership of our team. \\
+		- Fully responsible for competition strategy planning relative to team members' capacity. \vspace{3pt} \\		
+		\textit{\textbf{Key Project Achievements}}: \vspace{3pt} \\
+		- Our team ranked 334 out of 2040 teams in the world, 7th in Australia, and 2nd in the Australian National University. \\
+		- Contributed approximately $90\%$ of our final competition result (510 out of 580 points) personally. \\
+		- Awarded IEEEXtreme 9.0 Digital Certificate and Gift Bundle. \\
+        
+  \item{\bf ACM-ICPC 2015}: \hfill 2015.8 \vspace{3pt} \\
+  		\textbf{Sponsor}: IBM. \vspace{3pt} \\
+		\textbf{Program and Introduction}: The ACM-ICPC International Collegiate Programming Contest is a multitier, team-based global programming competition sponsored by IBM once a year. \vspace{3pt} \\
+		\textbf{Main Contributions:} \vspace{3pt} \\
+		- Main contributor of our team. \vspace{3pt} \\
+		\textit{\textbf{Key Project Achievements}}: \vspace{3pt} \\
+		- Ranked 2nd in the Australian National University. \\
+		- Representative of the Australian National University, won Silver Medal in Canberra site.
+			
+\end{itemize}
+
+
+
+% certificates:
+\resheading{Certificates}
+
+\begin{itemize}
+\itemsep -2pt % reduce space between items
+  \item{\bf IBM Certified AIX User} \hfill 2013.7
+\end{itemize}
+
+
+
+% language skills:
+\resheading{Language Skills}
+
+\begin{itemize}
+\itemsep -2pt % reduce space between items
+  \item{\bf Chinese}: First Language	
+  \item{\bf English}: IELTS 7.0
+\end{itemize}
+
+
+
+% computing skills:
+\resheading{Computing Skills}
+
+\begin{itemize}
+\itemsep -2pt % reduce space between items
+  \item{\bf Programming Languages}: Proficient in C/C++, Java, and Python. Familiar with JavaScript, C\#. (More than 5-year programming experience.)
+  \item{\bf Databases}: Familiar with MySQL, SQL Server, and PostgreSQL.
+  \item{\bf Operating Systems}: Familiar with Linux/Unix.
+  \item{\bf Software}: Proficient in using \LaTeX, most popular software developing IDEs, and MS Office Suite.
+\end{itemize}
+
+
+% education backgroud:
+\resheading{Education Backgroud}
+
+\begin{itemize}
+  \item{\bf Master Degree of Computing} \hfill 2014.7 - now \\
+  					  \textbf{\textit{The Australian National University (Australia)}} \\
+                      Major: Master of Computing \\
+                      Specialisation: Artificial Intelligence \\
+                      Major Courses: Machine Learning, Artificial Intelligence, Document Analysis
+  \item{\bf Bachelor Degree of Software Engineering}   \hfill 2010.9 - 2014.6 \\
+  \textbf{\textit{Dalian University of Technology (China)}} \\
+                      Major: Software Engineering\\
+                      Specialisation: Software Development and Testing \\
+                      Thesis Topic: \textit{Analysis of Zhouyi Ideas Based on Text Mining} \\
+                      Supervisor: Xianchao Zhang \\
+                      Major Courses: Data Structures and Algorithms, Operating Systems, Computer Networks, Principles of Compilers, Databases, C and C++ Programming
+\end{itemize}
+
+
+% self assessment:
+%\resheading{Self Assessment}
+%\begin{itemize}
+%\itemsep -2pt % reduce space between items
+%  \item Good language skills.
+%  \item Passionate about programming.
+%  \item Highly self-learning ability.
+%  \item Eager for learning new skills.
+%  \item Fine team spirits.
+%  \item Outstanding self-discipline.
+%\end{itemize}
+
+References available upon request.
+
+\end{CJK*}
+\end{resume}
+\end{document}
