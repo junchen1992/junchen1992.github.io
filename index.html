@@ -1,126 +1,169 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Jun Chen</title>
-<link type="text/css" rel="stylesheet" href="./stylesheets/index.css">
-</head>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./images/ayin.ico">
 
-<body>
-  <div id="header">
-    <h3>Jun Chen</h3>
-  </div>
+    <title>Jun Chen</title>
 
-  <div id="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="algorithms.html">Algorithms</a></li>
-      <li><a href="machineLearning.html">Machine Learning</a></li>
-      <li><a href="resume.html">Resume</a></li>
-    </ul>
-  </div>
+    <!-- Bootstrap core CSS -->
+    <link href="./stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./stylesheets/blog.css" rel="stylesheet">
+  </head>
 
 
-  <!-- Begin of Sidebar Section -->
-  <!-- <div>
-    <img class="imagesidebar" src="img/pamela01.jpeg">
-  </div>
- -->
-  <div class="sideright">
-    <h2>Catalogues</h2>
-    <p></p>
-  </div>
-  <!-- End of Sidebar Section -->
+  <body>
 
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="http://v3.bootcss.com/examples/blog/#">Home</a>
+          <a class="blog-nav-item" href="#">Algorithms</a>
+          <a class="blog-nav-item" href="#">Machine Learning</a>
+          <a class="blog-nav-item" href="resume.html">About</a>
+        </nav>
+      </div>
+    </div>
 
+    <div class="container">
 
-  <!-- Begin of Posts (Main) Section -->
-  <div class="main">
-    <h2>1. Binary Indexed Tree (Fenwick Tree)</h2>
-    <p>
-      <a href="https://leetcode.com/problems/count-of-smaller-numbers-after-self/">315. Count of Smaller Numbers After Self</a>
-      <p>Description: You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].</p>
-      <pre>
-        <code>
-public class Solution315 {
+      <div class="blog-header">
+        <h1 class="blog-title">Jun Chen (ANUer)</h1>
+        <p class="lead blog-description">Be the change that you wish to see in the world!</p>
+      </div>
 
-  class BIT {
-    int n;
-    int[] bit;
+      <div class="row">
 
-    BIT(int size) {
-      this.n = size + 1;
-      this.bit = new int[this.n];
-    }
+        <div class="col-sm-8 blog-main">
 
-    void update(int i) {
-      while (i <= n - 1) {
-        bit[i]++;
-        i = i + (i & -i);
-      }
-    }
+          <div class="blog-post">
+            <h2 class="blog-post-title">About</h2>
+            <p class="blog-post-meta">January 1, 2016 by <a href="#">Jun</a></p>
 
-    int sum(int i) {
-      int ans = 0;
-      while (i > 0) {
-        ans += bit[i];
-        i = i - (i & -i);
-      }
-      return ans;
-    }
-  }
+            <!-- <h2>About the Blog</h2> -->
+            <p>This is my personal blog. This blog currently contains learning notes of <em>algorithms, machine learning, and Web Development.</em></p>
+            
+         
+            <h2>About Myself</h2>
+            <p>The quote I live for my life:</p>
+            <blockquote>
+              <p>Be the change that you wish to see in the world. - Mahatma Gandhi</p>
+            </blockquote>
 
-  public List<Integer> countSmaller(int[] nums) {
-    List<Integer> counts = new LinkedList<Integer>();
+            <p>I am currently a student at The Australian National University, completing a <em>Master of Computing</em> degree. </p>
 
-    if (nums == null || nums.length == 0)
-      return counts;
+            <h3>Summary</h3>
+            <p>IT background with over 5+ years of experiences in software engineering. Highly familiar with a wide variety of programming languages, design patterns, and software frameworks. Possess a Bachelor Degree in Software Engineering and completing a Master Degree in Computing.</p>
 
-    int[] orderedNums = nums.clone();
-    Arrays.sort(orderedNums);
-    int[] nums2 = IntStream.of(nums)
-        .map(x -> Arrays.binarySearch(orderedNums, x) + 1).toArray();
+            <h3>Education</h3>
+            <pre>
+              <code>
+                {
+                  [
+                    Master: 
+                    {
+                      University: Australian National University
+                      Country: Australia
+                      Attendance: 2014.7 - 2016.7
+                      Degree: Master of Computing
+                      Specialisation: Artificial Intelligence
+                    },
 
-    BIT bit = new BIT(nums2.length);
-    for (int i = nums2.length - 1; i >= 0; i--) {
-      counts.add(0, bit.sum(nums2[i]));
-      bit.update(nums2[i] + 1);
-    }
+                    Bachelor:
+                    {
+                      University: Dalian University of Technology
+                      Country: China
+                      Attendance: 2010.9 - 2014.7
+                      Degree: Bachelor of Software Engineering
+                      Specialisation: Software Development and Testing
+                    }
+                  ]
+                }
+              </code>
+            </pre>
+            
+            
 
-    return counts;
-  }
+             <h3>Interests</h3>
+            <p>My technical interests:</p>
+            <ul>
+              <li>Large-scale Data Analysis.</li>
+              <li>Algorithms Design and Optimization</li>
+              <li>Web Design and Development</li>
+            </ul>
+          </div><!-- /.blog-post -->
 
-  public static void main(String[] args) {
-    Solution315 solution = new Solution315();
-
-    int[] nums = { 5, 2, 6, 1 };
-    List<Integer> counts = solution.countSmaller(nums);
-    for (int count : counts)
-      System.out.print(count + " ");
-  }
-
-}
-        </code>
-      </pre>
-    </p>
-  </div>
-  <!-- End of Posts (Main) Section -->
+          
 
 
 
-  <!-- footer -->
-  <div id="footer">
-    <ul>
-      <li><a href="">Twitter</a></li>
-      <li><a href="">Facebook</a></li>
-      <li><a href="https://au.linkedin.com/in/junchen1992">LinkedIn</a></li>
-      <li><a href="">About</a></li>
-    </ul>
+          <nav>
+            <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </nav>
 
-    <span style="color: black;">&copy; 2016 Jun Chen.</span>
-  </div>
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Me</h4>
+            <p><em>Internship at <a href='http://www.hrmweb.com.au/'>HRMWEB.</a></em> </p>
+            <p>Email: <em>Jason.JunCHEN1992@gmail.com</em> </p>
+          </div>
+          <!-- <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="http://v3.bootcss.com/examples/blog/#">March 2014</a></li>
+              <li><a href="http://v3.bootcss.com/examples/blog/#">February 2014</a></li>
+              <li><a href="http://v3.bootcss.com/examples/blog/#">January 2014</a></li>
+              <li><a href="http://v3.bootcss.com/examples/blog/#">December 2013</a></li>
+              <li><a href="http://v3.bootcss.com/examples/blog/#">November 2013</a></li>
+              <li><a href="http://v3.bootcss.com/examples/blog/#">October 2013</a></li>
+              <li><a href="http://v3.bootcss.com/examples/blog/#">September 2013</a></li>
+              <li><a href="http://v3.bootcss.com/examples/blog/#">August 2013</a></li>
+              <li><a href="http://v3.bootcss.com/examples/blog/#">July 2013</a></li>
+              <li><a href="http://v3.bootcss.com/examples/blog/#">June 2013</a></li>
+              <li><a href="http://v3.bootcss.com/examples/blog/#">May 2013</a></li>
+              <li><a href="http://v3.bootcss.com/examples/blog/#">April 2013</a></li>
+            </ol>
+          </div> -->
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="file:///Users/Jason/git/0416354917.github.io/resume.html">Resume</a></li>
+              <li><a href="https://github.com/0416354917">GitHub</a></li>
+<!--               <li><a href="https://twitter.com/tlnd_sky">Twitter</a></li> -->
+              <li><a href="https://au.linkedin.com/in/junchen1992">LinkedIn</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>@Jun Chen 2016</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
 
 
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./javascripts/jquery.min.js"></script>
+    <script src="./javascripts/bootstrap.min.js"></script>
+  
 
-</html>
+</body></html>
