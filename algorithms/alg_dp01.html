@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../images/ayin.ico">
+
+    <title>Algorithms</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../stylesheets/blog.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="../index.html">Home</a>
+          <a class="blog-nav-item" href="../algorithm.html#">Algorithms</a>
+          <a class="blog-nav-item" href="#">Machine Learning</a>
+          <a class="blog-nav-item" href="../resume.html">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">Algorithms & Data Structures</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Stock Maximize</h2>
+            <p class="blog-post-meta">July 1, 2016</p>
+
+            <h3>Source: <a href='https://www.hackerrank.com/challenges/stockmax'>HackerRank</a></h3>
+
+            <h3>Analysis: </h3>
+            <p>Dynamic Programing. Time complexity is O(n).</p>
+
+            <h3>Solution: </h3>
+            <pre>
+              <code>
+t = int(raw_input())
+for t_i in xrange(t):
+    n = int(raw_input())
+    price = map(int, raw_input().split())
+    
+    profit = 0
+    index  = n - 1
+    peek = price[index]
+    index -= 1
+    while index >= 0:
+        while index >= 0 and price[index] >= peek:
+            peek = price[index]
+            index -= 1
+        if index == -1:
+            break
+        else:
+            local_profit = 0
+            while index >= 0 and price[index] < peek:
+                local_profit += (peek - price[index])
+                index -= 1
+            profit += local_profit
+    print profit
+
+              </code>
+            </pre>
+            
+            
+
+             <!-- <h3>Interests</h3>
+            <p>My technical interests:</p>
+            <ul>
+              <li>Large-scale Data Analysis.</li>
+              <li>Algorithms Design and Optimization</li>
+              <li>Web Design and Development</li>
+            </ul> -->
+          </div><!-- /.blog-post -->
+
+          
+
+
+
+          <nav>
+            <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Me</h4>
+            <p><em>Internship at <a href='http://www.hrmweb.com.au/'>HRMWEB.</a></em> </p>
+            <p>Email: <em>Jason.JunCHEN1992@gmail.com</em> </p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">Stock Maximize</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="file:///Users/Jason/git/0416354917.github.io/resume.html">Resume</a></li>
+              <li><a href="https://github.com/0416354917">GitHub</a></li>
+<!--               <li><a href="https://twitter.com/tlnd_sky">Twitter</a></li> -->
+              <li><a href="https://au.linkedin.com/in/junchen1992">LinkedIn</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>@Jun Chen 2016</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../javascripts/jquery.min.js"></script>
+    <script src="../javascripts/bootstrap.min.js"></script>
+  
+
+</body></html>
