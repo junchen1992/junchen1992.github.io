@@ -1,0 +1,90 @@
+#-------------------------------
+# Site Settings
+title: Jun Chen
+logo: #'/images/logo-lx.png'
+author: Jun Chen
+description: This is Jun's personal website.
+
+
+#-------------------------------
+# Menu Settings
+menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/'
+    - title: 'About'
+      url: '/about/'
+    - title: 'Blog'
+      url: '/blog/'
+    - title: 'Contact'
+      url: '/contact/'
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  hero__title: Hello, my name’s Jun.
+  hero__description: IT background with over 6 years of working experiences in Software Engineering and Artificial Intelligence. Highly familiar with a wide variety of programming languages, design patterns, and software frameworks. Possess a Bachelor Degree in Software Engineering and a Master Degree in Computing.
+
+
+#-------------------------------
+# Portfolio Settings
+portfolio:
+  portfolio__title: Gallery
+  portfolio__gallery:
+    - image: /images/certificate1.png
+      title: Neural Networks and Deep Learning Coursera Certificate
+      description: Verify this certificate <a href="https://coursera.org/verify/5ADR3VMYFWSA">Coursera</a>
+
+    - image: /images/certificate2.png
+      title: Improving Deep Neural Networks Coursera Certificate
+      description: Verify this certificate <a href="https://coursera.org/verify/EJ9XKX44RUCX">Coursera</a>
+
+    - image: /images/certificate3.png
+      title: Structuring Machine Learning Projects Coursera Certificate
+      description: Verify this certificate <a href="https://coursera.org/verify/2NH5NTFZVNEV">Coursera</a>
+
+    - image: /images/certificate4.png
+      title: Convolutional Neural Networks Coursera Certificate
+      description: Verify this certificate <a href="https://coursera.org/verify/X99Q2LSZBQ9N">Coursera</a>
+
+    - image: /images/certificate5.png
+      title: Sequence Models Coursera Certificate
+      description: Verify this certificate <a href="https://coursera.org/verify/WRWJG2RUKCNH">Coursera</a>
+
+    - image: /images/certificate6.png
+      title: Deep Learning Coursera Certificate
+      description: Verify this certificate <a href="https://coursera.org/verify/specialization/6NWNPFWYSQKR">Coursera</a>
+
+
+
+#-------------------------------
+# Footer Settings
+social:
+- {icon: "ion-logo-twitter", color: "#55acee", label: Twitter, link: "https://twitter.com/jason_jun_chen"}
+- {icon: "ion-logo-linkedin", color: "#0077b5", label: Linkedin, link: "https://www.linkedin.com/in/junchen1992/"}
+- {icon: "ion-logo-github", color: "#211f1f", label: GitHub, link: "https://github.com/junchen1992"}
+
+# Example of adding a new link to the footer section - {icon: "ion-logo-github", color: "#24292e, label: Github, link: "https://github.com"}
+# Other icons can be found at https://ionicons.com/v4/
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: jason.junchen1992@gmail.com # Add your email for contact form
+#  description: Clancy comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form.
+
+# NOTE
+# Clancy comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+
+disqus-identifier: anvodstudio-demo # add your shortname for Disqus Comment. For example anvodstudio-demo
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
