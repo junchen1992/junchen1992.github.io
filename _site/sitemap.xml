@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://0.0.0.0:4000/about/</loc>
+<loc>http://0.0.0.0:9200/about/</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:4000/contact/</loc>
+<loc>http://0.0.0.0:9200/contact/</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:4000/elements/</loc>
+<loc>http://0.0.0.0:9200/elements/</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:4000/blog/</loc>
+<loc>http://0.0.0.0:9200/blog/</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:4000/</loc>
+<loc>http://0.0.0.0:9200/</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:4000/tags/</loc>
+<loc>http://0.0.0.0:9200/tags/</loc>
 </url>
 </urlset>

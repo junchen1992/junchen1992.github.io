@@ -61,8 +61,8 @@ portfolio:
 #-------------------------------
 # Footer Settings
 social:
-- {icon: "ion-logo-twitter", color: "#55acee", label: Twitter, link: "https://twitter.com/jason_jun_chen"}
 - {icon: "ion-logo-linkedin", color: "#0077b5", label: Linkedin, link: "https://www.linkedin.com/in/junchen1992/"}
+- {icon: "ion-logo-twitter", color: "#55acee", label: Twitter, link: "https://twitter.com/jason_jun_chen"}
 - {icon: "ion-logo-github", color: "#211f1f", label: GitHub, link: "https://github.com/junchen1992"}
 
 # Example of adding a new link to the footer section - {icon: "ion-logo-github", color: "#24292e, label: Github, link: "https://github.com"}
